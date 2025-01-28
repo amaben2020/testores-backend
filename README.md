@@ -32,7 +32,7 @@
   </a>
 </p>
 
-## hOW TO RUN THIS APP
+## HOW TO RUN THE APP
 
 1.  Make sure you have a Postgres DB: https://www.bytebase.com/blog/how-to-set-up-postgres-using-docker/
 2.  Ensure your postgres db username:postgres, password:mysecretpassword
