@@ -8,7 +8,7 @@
   </a>
 </p>
 <h1 align="center">
-  Medusa
+  Uzochukwu Benneth's Assessment 
 </h1>
 
 <h4 align="center">
@@ -32,39 +32,25 @@
   </a>
 </p>
 
-## Compatibility
+## hOW TO RUN THIS APP
 
-This starter is compatible with versions >= 1.8.0 of `@medusajs/medusa`. 
+1.  Make sure you have a Postgres DB: https://www.bytebase.com/blog/how-to-set-up-postgres-using-docker/
+2.  Ensure your postgres db username:postgres, password:mysecretpassword
+3.  npm run dev OR yarn dev
+4.  Credentials for login: Email: admin@medusa-test.com Password: fHGuen5e8wUkYEV
 
-## Getting Started
+## Environment Variables used .env
 
-Visit the [Quickstart Guide](https://docs.medusajs.com/learn) to set up a server.
-
-Visit the [Docs](https://docs.medusajs.com/learn#get-started) to learn more about our system requirements.
-
-## What is Medusa
-
-Medusa is a set of commerce modules and tools that allow you to build rich, reliable, and performant commerce applications without reinventing core commerce logic. The modules can be customized and used to build advanced ecommerce stores, marketplaces, or any product that needs foundational commerce primitives. All modules are open-source and freely available on npm.
-
-Learn more about [Medusa’s architecture](https://docs.medusajs.com/learn/advanced-development/architecture/overview) and [commerce modules](https://docs.medusajs.com/learn/basics/commerce-modules) in the Docs.
-
-## Roadmap, Upgrades & Plugins
-
-You can view the planned, started and completed features in the [Roadmap discussion](https://github.com/medusajs/medusa/discussions/categories/roadmap).
-
-Follow the [Upgrade Guides](https://docs.medusajs.com/upgrade-guides/) to keep your Medusa project up-to-date.
-
-Check out all [available Medusa plugins](https://medusajs.com/plugins/).
-
-## Community & Contributions
-
-The community and core team are available in [GitHub Discussions](https://github.com/medusajs/medusa/discussions), where you can ask for support, discuss roadmap, and share ideas.
-
-Join our [Discord server](https://discord.com/invite/medusajs) to meet other community members.
-
-## Other channels
-
-- [GitHub Issues](https://github.com/medusajs/medusa/issues)
-- [Twitter](https://twitter.com/medusajs)
-- [LinkedIn](https://www.linkedin.com/company/medusajs)
-- [Medusa Blog](https://medusajs.com/blog/)
+MEDUSA_ADMIN_ONBOARDING_TYPE=nextjs
+STORE_CORS=http://localhost:8000,https://docs.medusajs.com,http://localhost:3000
+ADMIN_CORS=http://localhost:3000,http://localhost:5173,http://localhost:9000,https://docs.medusajs.com
+AUTH_CORS=http://localhost:3000,http://localhost:5173,http://localhost:9000,http://localhost:8000,https://docs.medusajs.com
+REDIS_URL=redis://localhost:6379
+JWT_SECRET=supersecret
+COOKIE_SECRET=supersecret
+DATABASE_URL=postgres://postgres:mysecretpassword@localhost/medusa-my-medusa-store
+MEDUSA_ADMIN_ONBOARDING_NEXTJS_DIRECTORY=my-medusa-store-storefront
+STRIPE_API_KEY=
+STRIPE_WEBHOOK_SECRET=
+PAYSTACK_SECRET_KEY=
+PAYSTACK_PUBLIC_KEY=
